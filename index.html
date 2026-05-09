@@ -4,17 +4,165 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thoughts</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      overflow:hidden;
+
+      background:
+      radial-gradient(circle at top left,
+      rgba(0,180,255,0.35),
+      transparent 28%),
+
+      radial-gradient(circle at bottom right,
+      rgba(0,255,180,0.28),
+      transparent 30%),
+
+      linear-gradient(135deg,
+      #0057ff 0%,
+      #008cff 45%,
+      #00c7b7 100%);
+    }
+
+    .hero{
+      width:100%;
+      max-width:1200px;
+      padding:40px 24px;
+      text-align:center;
+    }
+
+    h1{
+      color:white;
+      font-size:clamp(3.4rem,8vw,6.5rem);
+      line-height:0.95;
+      font-weight:800;
+      letter-spacing:-4px;
+    }
+
+    h1 span{
+      display:block;
+      margin-top:10px;
+    }
+
+    p{
+      margin-top:34px;
+      color:rgba(255,255,255,0.65);
+      font-size:1.5rem;
+      line-height:1.5;
+      font-weight:500;
+    }
+
+    .btn{
+      margin-top:55px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:16px;
+
+      padding:24px 52px;
+
+      border-radius:999px;
+
+      text-decoration:none;
+      color:white;
+
+      font-size:1.7rem;
+      font-weight:700;
+
+      background:
+      linear-gradient(90deg,
+      #1f6fff,
+      #00d8b3);
+
+      box-shadow:
+      0 10px 40px rgba(0,0,0,0.18);
+
+      transition:0.25s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px) scale(1.02);
+    }
+
+    .android{
+      font-size:2rem;
+    }
+
+    .ios{
+      margin-top:30px;
+      font-size:1.15rem;
+      color:rgba(255,255,255,0.55);
+    }
+
+    @media(max-width:768px){
+
+      body{
+        padding:20px;
+      }
+
+      h1{
+        font-size:4rem;
+        letter-spacing:-2px;
+      }
+
+      p{
+        font-size:1.1rem;
+        margin-top:24px;
+      }
+
+      .btn{
+        margin-top:42px;
+        width:100%;
+        padding:22px 20px;
+        font-size:1.3rem;
+      }
+
+    }
+
+  </style>
 </head>
+
 <body>
 
-  <div class="hero">
-    <h1>What's on your mind?<br>Let the world respond.</h1>
-    <p>A new way to share thoughts and instantly see where people stand.</p>
+  <section class="hero">
 
-    <a class="btn" href="https://github.com/KarthikSideProjects/thoughts/releases/download/V1.0/app-release.apk">Download on Android</a>
-    <p class="ios">iOS coming soon.</p>
-  </div>
+    <h1>
+      What’s on your mind?
+      <span>Let the world respond.</span>
+    </h1>
+
+    <p>
+      A new way to share thoughts and instantly see where people stand.
+    </p>
+
+    <a class="btn" href="PASTE_YOUR_APK_LINK_HERE">
+
+      <span class="android">🤖</span>
+
+      Download on Android
+
+    </a>
+
+    <div class="ios">
+      iOS coming soon.
+    </div>
+
+  </section>
 
 </body>
 </html>
