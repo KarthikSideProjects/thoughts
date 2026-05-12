@@ -1,1 +1,143 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Policies - Thoughts</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      min-height:100vh;
+      background:
+      linear-gradient(135deg,
+      #0057ff 0%,
+      #008cff 45%,
+      #00c7b7 100%);
+      padding:60px 24px;
+      color:white;
+    }
+
+    .container{
+      max-width:700px;
+      margin:auto;
+    }
+
+    h1{
+      font-size:3rem;
+      font-weight:800;
+      margin-bottom:18px;
+      letter-spacing:-2px;
+    }
+
+    .subtitle{
+      color:rgba(255,255,255,0.72);
+      line-height:1.6;
+      margin-bottom:40px;
+      font-size:1.05rem;
+    }
+
+    .policy-list{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+
+    .policy-card{
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.12);
+      padding:24px;
+      border-radius:22px;
+      text-decoration:none;
+      color:white;
+      transition:0.25s ease;
+      backdrop-filter:blur(10px);
+    }
+
+    .policy-card:hover{
+      transform:translateY(-3px);
+      background:rgba(255,255,255,0.12);
+    }
+
+    .policy-title{
+      font-size:1.2rem;
+      font-weight:700;
+    }
+
+    .policy-desc{
+      margin-top:10px;
+      color:rgba(255,255,255,0.72);
+      line-height:1.6;
+      font-size:0.98rem;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Policies</h1>
+
+    <div class="subtitle">
+      Legal policies, community standards, and account management information for Thoughts.
+    </div>
+
+    <div class="policy-list">
+
+      <a class="policy-card" href="privacy-policy.html">
+
+        <div class="policy-title">
+          Privacy Policy
+        </div>
+
+        <div class="policy-desc">
+          Learn how we collect, use, and protect your information.
+        </div>
+
+      </a>
+
+      <a class="policy-card" href="terms.html">
+
+        <div class="policy-title">
+          Terms & Conditions
+        </div>
+
+        <div class="policy-desc">
+          Rules and conditions for using Thoughts.
+        </div>
+
+      </a>
+
+      <a class="policy-card" href="community-guidelines.html">
+
+        <div class="policy-title">
+          Community Guidelines
+        </div>
+
+        <div class="policy-desc">
+          Rules and standards for polls, interactions, and user behavior.
+        </div>
+
+      </a>
+
+    
+    </div>
+
+  </div>
+
+</body>
+</html>
