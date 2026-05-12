@@ -9,7 +9,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
+ *{
 
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+  }
     *{
       margin:0;
       padding:0;
@@ -38,7 +46,41 @@
       #008cff 45%,
       #00c7b7 100%);
     }
+body{
 
+    font-family:'Inter',sans-serif;
+
+  }
+
+  /* your existing CSS */
+
+  .footer-links{
+
+    margin-top:32px;
+
+  }
+
+  .footer-links a{
+
+    color:rgba(255,255,255,0.72);
+
+    text-decoration:none;
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    transition:0.2s ease;
+
+  }
+
+  .footer-links a:hover{
+
+    color:white;
+
+    text-decoration:underline;
+
+  }
     .hero{
       width:100%;
       max-width:1200px;
@@ -139,6 +181,7 @@
 
 <body>
 
+  
   <section class="hero">
 
     <h1>
@@ -161,6 +204,9 @@
     <div class="ios">
       iOS coming soon.
     </div>
+    <div class="footer-links">
+  <a href="policies.html">Policies</a>
+</div>
 
   </section>
 
